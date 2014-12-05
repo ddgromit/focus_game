@@ -4,8 +4,8 @@ class Game
   MULTIPLIER_INTERVAL_SECS = 10
   MAX_MULTIPLIER = 6
 
-  def initialize
-    @score = 0
+  def initialize(initial_score = 0)
+    @score = initial_score
     @multiplier = 1
     @last_on_topic = Time.now
   end
